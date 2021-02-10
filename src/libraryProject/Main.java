@@ -41,21 +41,21 @@ public class Main {
         System.out.println();
 //
 //    // Print the titles of all available books from both libraries
-//    System.out.println("Books available in the first library:");
-//    firstLibrary.printAvailableBooks();
-//    System.out.println();
-//    System.out.println("Books available in the second library:");
-//    secondLibrary.printAvailableBooks();
-//    System.out.println();
+        System.out.println("Books available in the first library:");
+        firstLibrary.printAvailableBooks();
+        System.out.println();
+        System.out.println("Books available in the second library:");
+        secondLibrary.printAvailableBooks();
+        System.out.println();
 //
 //    // Return The Lords of the Rings to the first library
-//    System.out.println("Returning The Lord of the Rings:");
-//    firstLibrary.returnBook("The Lord of the Rings");
-//    System.out.println();
-//
+        System.out.println("Returning The Lord of the Rings:");
+//        firstLibrary.returnBook("The Lord of the Rings");
+        System.out.println();
+
 //    // Print the titles of available from the first library
-//    System.out.println("Books available in the first library:");
-//    firstLibrary.printAvailableBooks();
+        System.out.println("Books available in the first library:");
+        firstLibrary.printAvailableBooks();
     }
 
 }

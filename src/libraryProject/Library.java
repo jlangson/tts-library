@@ -41,8 +41,16 @@ public class Library {
         }
         
     }
+    
+    public void printAvailableBooks(){
+        for(Book book : catalog){
+            if(!book.getBorrowed()){
+                System.out.println(book);
+            }
+        }
+    }
 
-    public Book findBookByTitle(String title) {
+    public Book findBookByTitle(String title) { //could be private as it's a helper method
         for (Book book : this.catalog) {
             if (book.getTitle().equalsIgnoreCase(title)) {
                 //if this used a for loop there would be an index location
