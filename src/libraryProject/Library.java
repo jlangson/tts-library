@@ -32,12 +32,12 @@ public class Library {
     public void borrowBook(String title) {
         Book book = findBookByTitle(title);
         if(book.getTitle().equals("")){ //book not found
-            System.out.printf("Sorry the book %s is not in our catalog", title);
-        } else if(book.isBorrowed()){
-            System.out.printf("Sorry the book %s is checked out", title);
+            System.out.printf("Sorry the book %s is not in our catalog%n", title);
+        } else if(book.getBorrowed()){
+            System.out.printf("Sorry the book %s is checked out%n", title);
         } else{ //
-            System.out.printf("Here is your book %s", title);
-            book.borrowed();
+            System.out.printf("Here is your book %s%n", title);
+            book.setBorrowed(true);
         }
         
     }
