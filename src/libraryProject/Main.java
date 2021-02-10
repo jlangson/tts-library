@@ -50,7 +50,7 @@ public class Main {
 //
 //    // Return The Lords of the Rings to the first library
         System.out.println("Returning The Lord of the Rings:");
-//        firstLibrary.returnBook("The Lord of the Rings");
+        firstLibrary.returnBookByTitle("The Lord of the Rings");
         System.out.println();
 
 //    // Print the titles of available from the first library

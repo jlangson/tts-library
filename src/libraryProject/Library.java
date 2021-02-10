@@ -49,11 +49,16 @@ public class Library {
             }
         }
     }
+    
+    public void returnBookByTitle(String title){
+        Book book = findBookByTitle(title);
+        book.setBorrowed(false);
+    }
 
     public Book findBookByTitle(String title) { //could be private as it's a helper method
         for (Book book : this.catalog) {
             if (book.getTitle().equalsIgnoreCase(title)) {
-                //if this used a for loop there would be an index location
+                //if this used a plain for loop there would be an index location
                 //so the code could be
                 //return this.catalog.get(i);
                 //and you wouldn't need the int bookLocation = this.catalog.indexOf(book)
