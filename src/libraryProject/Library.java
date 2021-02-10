@@ -45,7 +45,7 @@ public class Library {
     public void printAvailableBooks(){
         for(Book book : catalog){
             if(!book.getBorrowed()){
-                System.out.println(book);
+                System.out.println(book.getTitle() + " is available");
             }
         }
     }
