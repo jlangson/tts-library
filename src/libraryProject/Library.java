@@ -4,8 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Library {
-//Add the missing implementation to this class
-
     private String address;
     private List<Book> catalog;
 
@@ -55,7 +53,7 @@ public class Library {
         book.setBorrowed(false);
     }
 
-    public Book findBookByTitle(String title) { //could be private as it's a helper method
+    private Book findBookByTitle(String title) { //be private as it's a helper method
         for (Book book : this.catalog) {
             if (book.getTitle().equalsIgnoreCase(title)) {
                 //if this used a plain for loop there would be an index location
@@ -65,8 +63,7 @@ public class Library {
                 int bookLocation = this.catalog.indexOf(book);
                 return this.catalog.get(bookLocation);
             }
-        }
+        }   
         return new Book(""); //means book not found
     }
-
 }
