@@ -1,14 +1,29 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package libraryProject;
 
-/**
- *
- * @author jared
- */
 public class Book {
-    
+
+    private String title;
+    private boolean borrowed = false;
+
+    // Creates a new Book
+    public Book(String bookTitle) {
+        this.title = bookTitle;
+    }
+
+    // Marks the book as rented
+    public void setBorrowed(boolean borrowed){
+        this.borrowed = borrowed;
+    }
+
+    // Returns true if the book is rented, false otherwise
+    public boolean getBorrowed() {
+        // Implement this method
+        return borrowed;
+    }
+
+    // Returns the title of the book
+    public String getTitle() {
+        return title;
+    }
+
 }
