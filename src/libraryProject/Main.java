@@ -12,7 +12,11 @@ public class Main {
         firstLibrary.addBook(new Book("Le Petit Prince"));
         firstLibrary.addBook(new Book("A Tale of Two Cities"));
         firstLibrary.addBook(new Book("The Lord of the Rings"));
-
+        
+        // Add some books to second library
+        secondLibrary.addBook(new Book("Charlotte's Web"));
+        secondLibrary.addBook(new Book("Turtle's All the Way Down"));
+        
         // Small test of the Book class
         Book example = new Book("The Da Vinci Code");
         System.out.println("Title (should be The Da Vinci Code): " + example.getTitle());
