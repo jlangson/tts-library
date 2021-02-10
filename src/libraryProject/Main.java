@@ -36,6 +36,7 @@ public class Main {
         System.out.println("Borrowing The Lord of the Rings:");
         firstLibrary.borrowBook("The Lord of the Rings");
         firstLibrary.borrowBook("The Lord of the Rings");
+        firstLibrary.borrowBook("The Lord of the Rings");
         secondLibrary.borrowBook("The Lord of the Rings");
         System.out.println();
 //
